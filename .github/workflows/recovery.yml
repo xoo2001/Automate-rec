@@ -14,7 +14,7 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git
+  MANIFEST: https://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git -b android-9.0
   DEVICE: olivelite
   DT_LINK: https://github.com/techyminati/android_recovery_xiaomi_olivelite
   DT_PATH: device/xiaomi/olivelite
