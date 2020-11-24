@@ -14,7 +14,7 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git -b fox_10.0
+  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
   DEVICE: rmx2151
   DT_LINK: https://github.com/techyminati/android_recovery_realme_RMX2151
   DT_PATH: device/Realme/rmx2151
