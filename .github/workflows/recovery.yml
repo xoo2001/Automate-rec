@@ -15,9 +15,9 @@ on:
 
 env:
   MANIFEST: git://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git -b android-9.0
-  DEVICE: olivelite
-  DT_LINK: https://github.com/techyminati/android_recovery_xiaomi_olivelite
-  DT_PATH: device/xiaomi/olivelite
+  DEVICE: lancelot
+  DT_LINK: https://github.com/techyminati/android_recovery_xiaomi_lancelot
+  DT_PATH: device/xiaomi/lancelot
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
