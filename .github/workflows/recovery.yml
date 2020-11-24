@@ -16,7 +16,7 @@ on:
 env:
   MANIFEST: git://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git -b android-9.0
   DEVICE: tiare
-  DT_LINK: https://github.com/techyminati/android_recovery_xiaomi_tiare
+  DT_LINK: https://github.com/mi-msm8937/twrp_device_xiaomi_tiare
   DT_PATH: device/xiaomi/tiare
   TARGET: recoveryimage
   TZ: Asia/Kolkata
