@@ -15,9 +15,9 @@ on:
 
 env:
   MANIFEST: git://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git -b android-9.0
-  DEVICE: RMX1831
-  DT_LINK: https://github.com/SHRP-Devices/device_realme_RMX1831
-  DT_PATH: device/oppo/RMX1831
+  DEVICE: RMX1821
+  DT_LINK: https://github.com/techyminati/android_recovery_realme_RMX1821
+  DT_PATH: device/realme/RMX1821
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
