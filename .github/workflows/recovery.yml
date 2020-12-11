@@ -15,9 +15,9 @@ on:
 
 env:
   MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-9.0
-  DEVICE: olivelite
+  DEVICE: tiare
   DT_LINK: https://github.com/Mediatek-leaks/android_recovery_xiaomi_tiare
-  DT_PATH: device/xiaomi/olivelite
+  DT_PATH: device/xiaomi/tiare
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
