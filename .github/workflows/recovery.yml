@@ -14,7 +14,7 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-9.0
+  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-8.1
   DEVICE: tiare
   DT_LINK: https://github.com/Mediatek-leaks/android_device_xiaomi_tiare
   DT_PATH: device/xiaomi/tiare
