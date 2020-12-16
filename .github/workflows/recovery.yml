@@ -14,10 +14,10 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-8.1
-  DEVICE: tiare
-  DT_LINK: https://github.com/Mediatek-leaks/android_device_xiaomi_tiare
-  DT_PATH: device/xiaomi/tiare
+  MANIFEST: git://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git -b android-9.0
+  DEVICE: RMX1821
+  DT_LINK: https://github.com/techyminati/android_recovery_realme_RMX1821 -b Main
+  DT_PATH: device/realme/RMX1821
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
