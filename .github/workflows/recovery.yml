@@ -14,7 +14,7 @@ on:
     types: [started]
 
 env:
-  MANIFEST: repo init -u git://github.com/PitchBlackTWRP/manifest_pb.git -b android-8.1
+  MANIFEST: git://github.com/PitchBlackTWRP/manifest_pb.git -b android-8.1
   DEVICE: tiare
   DT_LINK: https://github.com/techyminati/twrp_device_xiaomi_tiare -b android-8.1
   DT_PATH: device/xiaomi/tiare
