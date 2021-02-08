@@ -14,10 +14,10 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git -b android-9.0
-  DEVICE: RMX1821
-  DT_LINK: https://github.com/techyminati/android_recovery_realme_RMX1821 -b Main
-  DT_PATH: device/realme/RMX1821
+  MANIFEST: repo init -u git://github.com/PitchBlackTWRP/manifest_pb.git -b android-8.1
+  DEVICE: tiare
+  DT_LINK: https://github.com/techyminati/twrp_device_xiaomi_tiare -b android-8.1
+  DT_PATH: device/xiaomi/tiare
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
@@ -52,6 +52,7 @@ jobs:
        - name: Build
          run: |
               cd work
+              cd bootable/recovery && patch -p1 < ../../device/xiaomi/tiare/patches/size.patch && cd ../..
               . build/envsetup.sh &&lunch omni_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
              
        - name: Upload recovery image
