@@ -14,7 +14,7 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni -b v3_9.0
+  MANIFEST: git://github.com/PitchBlackTWRP/manifest_pb.git -b android-9.0
   DEVICE: tiare
   DT_LINK: https://github.com/techyminati/twrp_device_xiaomi_tiare -b 9.0
   DT_PATH: device/xiaomi/tiare
@@ -53,7 +53,6 @@ jobs:
          run: |
               cd work
               cd bootable/recovery && patch -p1 < ../../device/xiaomi/tiare/patches/size.patch && cd ../..
-              cd device/xiaomi/tiare && rm -rf omni.dependencies & cd ../../../
               . build/envsetup.sh &&lunch omni_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
              
        - name: Upload recovery image
