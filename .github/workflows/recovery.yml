@@ -52,7 +52,6 @@ jobs:
        - name: Build
          run: |
               cd work
-              cd bootable/recovery && patch -p1 < ../../device/xiaomi/tiare/patches/size.patch && cd ../..
               . build/envsetup.sh &&lunch omni_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
              
        - name: Upload recovery image
