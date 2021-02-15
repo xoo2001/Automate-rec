@@ -15,9 +15,9 @@ on:
 
 env:
   MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
-  DEVICE: RMX1831
-  DT_LINK: https://github.com/SHRP-Devices/device_realme_RMX1831
-  DT_PATH: device/realme/RMX1831
+  DEVICE: CPH1861
+  DT_LINK: https://github.com/CPH1859/android_device_CPH1861_TWRP
+  DT_PATH: device/oppo/CPH1861
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
