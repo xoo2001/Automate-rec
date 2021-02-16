@@ -15,9 +15,9 @@ on:
 
 env:
   MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-9.0
-  DEVICE: tiare
-  DT_LINK: https://github.com/Microsoft-Leaks/twrp_device_xiaomi_tiare
-  DT_PATH: device/xiaomi/tiare
+  DEVICE: RMX2185
+  DT_LINK: https://github.com/realme-G35/android_recovery_realme_RMX2185
+  DT_PATH: device/realme/RMX2185
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
