@@ -14,10 +14,10 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
-  DEVICE: RMX1831
-  DT_LINK: https://github.com/SHRP-Devices/device_realme_RMX1831
-  DT_PATH: device/realme/RMX1831
+  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-9.0
+  DEVICE: tiare
+  DT_LINK: https://github.com/Microsoft-Leaks/twrp_device_xiaomi_tiare
+  DT_PATH: device/xiaomi/tiare
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
