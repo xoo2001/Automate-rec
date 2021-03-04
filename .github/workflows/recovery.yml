@@ -14,10 +14,10 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni -b v3_10.0
-  DEVICE: RMX2151
-  DT_LINK: https://github.com/Mediatek-leaks/2151
-  DT_PATH: device/realme/RMX2151
+  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
+  DEVICE: tiare
+  DT_LINK: https://github.com/Venkat3620/twrp_device_xiaomi_tiare.git
+  DT_PATH: device/xiaomi/tiare
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
