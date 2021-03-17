@@ -14,10 +14,10 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/PitchBlackTWRP/manifest_pb.git -b android-8.1
-  DEVICE: tiare
-  DT_LINK: https://github.com/techyminati/twrp_device_xiaomi_tiare -b android-8.1
-  DT_PATH: device/xiaomi/tiare
+  MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni -b v3_10.0
+  DEVICE: merlin
+  DT_LINK: https://github.com/surblazer/omni_device_xiaomi_merlin.git
+  DT_PATH: device/xiaomi/merlin
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
