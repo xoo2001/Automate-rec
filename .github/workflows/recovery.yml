@@ -15,9 +15,9 @@ on:
 
 env:
   MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
-  DEVICE: RMX2151
-  DT_LINK: https://github.com/Mediatek-leaks/2151
-  DT_PATH: device/realme/RMX2151
+  DEVICE: rmx2020
+  DT_LINK: https://github.com/Mediatek-leaks/TWRP_rmx2020 -b android-10.0
+  DT_PATH: device/realme/rmx2020
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
@@ -47,7 +47,7 @@ jobs:
              cd work
              repo init -u $MANIFEST --depth=1 --groups=all,-notdefault,-device,-darwin,-x86,-mips
              repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
-             git clone $DT_LINK --depth=10 --single-branch $DT_PATH && cd $DT_PATH && git reset --hard 176f9b1c765daf8c379591edf8b56950755ef98d && cd ../../..
+             git clone $DT_LINK --depth=1 --single-branch $DT_PATH 
              
        - name: Build
          run: |
