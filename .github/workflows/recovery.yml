@@ -17,7 +17,7 @@ env:
   MANIFEST: git://github.com/PitchBlackTWRP/manifest_pb.git -b android-10.0
   DEVICE: RMX2185
   DT_LINK: https://github.com/realme-G35/android_recovery_realme_RMX2185
-  DT_PATH: device/realme/rmx2020
+  DT_PATH: device/realme/RMX2185
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
