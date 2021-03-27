@@ -14,9 +14,9 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
-  DEVICE: rmx2020
-  DT_LINK: https://github.com/Mediatek-leaks/TWRP_rmx2020 -b android-10.0
+  MANIFEST: git://github.com/PitchBlackTWRP/manifest_pb.git -b android-10.0
+  DEVICE: RMX2185
+  DT_LINK: https://github.com/realme-G35/android_recovery_realme_RMX2185
   DT_PATH: device/realme/rmx2020
   TARGET: recoveryimage
   TZ: Asia/Kolkata
@@ -47,7 +47,7 @@ jobs:
              cd work
              repo init -u $MANIFEST --depth=1 --groups=all,-notdefault,-device,-darwin,-x86,-mips
              repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
-             git clone $DT_LINK --depth=1 --single-branch $DT_PATH 
+             git clone $DT_LINK --depth=10 --single-branch $DT_PATH && cd $DT_PATH && git reset --hard 10ccd1b9c5565e983f8fe2affddc7638721dfa44 && cd ../../..
              
        - name: Build
          run: |
@@ -58,4 +58,4 @@ jobs:
          run: |
               cd work/out/target/product/$DEVICE
               curl -sL https://git.io/file-transfer | sh
-              ./transfer wet recovery.img && ./transfer wet *Unofficial*.zip
+              ./transfer wet recovery.img && ./transfer wet *.zip
