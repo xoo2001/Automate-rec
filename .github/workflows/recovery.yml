@@ -15,11 +15,11 @@ on:
 
 env:
   MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_9.0
-  DEVICE: RMX1831
-  DT_LINK:  https://github.com/SHRP-Devices/device_realme_RMX1831
-  DT_PATH: device/realme/RMX1831
+  DEVICE: c103
+  DT_LINK:  https://github.com/SHRP-Devices/device_coolpad_c103
+  DT_PATH: device/coolpad/c103
   TARGET: recoveryimage
-  VENDOR: realme
+  VENDOR: coolpad
   TZ: Asia/Kolkata
   ID: -1001181350086
   TOKEN: ${{ secrets.BOTTOKEN }}
