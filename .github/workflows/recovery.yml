@@ -60,7 +60,7 @@ jobs:
        - name: Upload recovery image to SHRP Maintainers Group
          run: |
               cd work/out/target/product/$DEVICE
-              ZIP=$(echo *.zip)
+              ZIP=$(echo *Unofficial*.zip)
               curl -F document=@$ZIP "https://api.telegram.org/bot$TOKEN/sendDocument" \
                   -F chat_id="-1001181350086" \
                   -F "disable_web_page_preview=true" \
