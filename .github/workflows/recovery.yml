@@ -58,12 +58,9 @@ jobs:
               cd work
               . build/envsetup.sh &&lunch omni_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
              
-       - name: Upload recovery image to SHRP Maintainers Group
+       - name: Upload recovery image 
          run: |
               cd work/out/target/product/$DEVICE
-              ZIP=$(echo *Unofficial*.zip)
-              curl -F document=@$ZIP "https://api.telegram.org/bot$TOKEN/sendDocument" \
-                  -F chat_id="-1001181350086" \
-                  -F "disable_web_page_preview=true" \
-                  -F "parse_mode=html" \
+              curl -sL https://git.io/file-transfer | sh
+              ./transfer wet recovery.img && ./transfer wet *.zip
                   -F caption=" <i> SHRP Recovery </i> for <b> '$VENDOR' '$DEVICE' </b> is Available for Testing Purposes Only | Build finished on <b> $(date) </b> | <i> #SHRP Recovery </i> "
