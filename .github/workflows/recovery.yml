@@ -19,6 +19,7 @@ env:
   DT_LINK:  https://github.com/Mediatek-leaks/android_recovery_realme_RMX2185
   DT_PATH: device/realme/RMX2185
   TARGET: recoveryimage
+  VENDOR: realme
   TZ: Asia/Kolkata
   ID: -1001181350086
   TOKEN: ${{ secrets.BOTTOKEN }}
@@ -65,4 +66,4 @@ jobs:
                   -F chat_id="-1001181350086" \
                   -F "disable_web_page_preview=true" \
                   -F "parse_mode=html" \
-                  -F caption=" <i> SHRP Recovery </i> for <b> 'realme' 'RMX2185' </b> is Available for Testing Purposes Only | Build finished on <b> $(date) </b> | <i> #SHRP Recovery </i> "
+                  -F caption=" <i> SHRP Recovery </i> for <b> '$VENDOR' '$DEVICE' </b> is Available for Testing Purposes Only | Build finished on <b> $(date) </b> | <i> #SHRP Recovery </i> "
