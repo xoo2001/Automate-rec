@@ -65,4 +65,4 @@ jobs:
                   -F chat_id="-1001181350086" \
                   -F "disable_web_page_preview=true" \
                   -F "parse_mode=html" \
-                  -F caption="Build finished on $(date) | For <b> $DEVICE </b> | #SHRP Recovery | Internal Build "
+                  -F caption=" <i> SHRP Recovery </i> for <b> 'realme' 'RMX2185' </b> is Available for Testing Purposes Only | Build finished on <b> $(date) </b> | <i> #SHRP Recovery </i> "
