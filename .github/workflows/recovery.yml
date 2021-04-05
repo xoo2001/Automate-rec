@@ -14,10 +14,10 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/omnirom/android.git -b android-11
-  DEVICE: rmx2020
-  DT_LINK:  https://github.com/sarthakroy2002/android_recovery_realme_RMX2020-RealmeUI2.git
-  DT_PATH: device/realme/rmx2020
+  MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_10.0
+  DEVICE: RMX2020
+  DT_LINK:  https://github.com/SHRP-Devices/device_realme_RMX2020.git
+  DT_PATH: device/realme/RMX2020
   TARGET: recoveryimage
   VENDOR: realme
   TZ: Asia/Kolkata
