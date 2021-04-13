@@ -15,11 +15,11 @@ on:
 
 env:
   MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
-  DEVICE: X682C
-  DT_LINK:  https://github.com/xoo2001/twrp_infinix_x682c.git
-  DT_PATH: device/infinix/X682C
+  DEVICE: kenzo
+  DT_LINK:  https://github.com/TeamWin/android_device_xiaomi_kenzo.git
+  DT_PATH: device/xiaomi/kenzo
   TARGET: recoveryimage
-  VENDOR: infinix
+  VENDOR: xiaomi
   TZ: Asia/Kolkata
   
   
