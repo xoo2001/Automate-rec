@@ -14,7 +14,7 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-11.0
+  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-11
   DEVICE: a12
   DT_LINK:  https://github.com/xoo2001/twrp_samsung_a12.git
   DT_PATH: device/samsung/a12
