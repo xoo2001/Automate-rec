@@ -14,12 +14,12 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_9.0
-  DEVICE: ido
-  DT_LINK:  https://github.com/xoo2001/android_recovery_ido.git -b shrp
-  DT_PATH: device/xiaomi/ido
+  MANIFEST: git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_10.0
+  DEVICE: X682C
+  DT_LINK:  https://github.com/xoo2001/twrp_infinix_x682c.git -b shrp
+  DT_PATH: device/infinix/X682C
   TARGET: recoveryimage
-  VENDOR: xiaomi
+  VENDOR: infinix
   TZ: Asia/Jakarta
   
   
@@ -71,4 +71,3 @@ jobs:
          with:
           name: recoveryimage
           path: work/out/target/product/*/*.img
-
