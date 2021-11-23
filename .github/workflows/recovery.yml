@@ -16,8 +16,8 @@ on:
 env:
   MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
   DEVICE: X689B
-  DT_LINK:  https://github.com/xoo2001/TWRP_infinix_hot10s.git
-  DT_PATH: device/infinix/X689B
+  DT_LINK:  https://github.com/xoo2001/twrp_device_Infinix_X689.git
+  DT_PATH: device/infinix/X689
   TARGET: recoveryimage
   VENDOR: infinix
   TZ: Asia/Jakarta
